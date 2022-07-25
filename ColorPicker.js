@@ -6,14 +6,12 @@ const buttonOn= document.querySelector("#ButtonOn");
 let modesKids;
 let actualModeVal;
 let actualMode;
-
+let actualLampStatus;
+actualLampStatus=document.getElementById('lampStatus');
 
 // Load all event listeners
 loadEventListeners();
-//alert(slider);
-// Load all event listeners
 function loadEventListeners() {
-  // Add task event
   modesUL.addEventListener('click', modeSelect);
   modesUL.addEventListener('click', lightLevelSlider);
   // modes.addEventListener('click', tempLevelSlider);
@@ -30,6 +28,22 @@ function disableAllModes(modes,modesKids)
 }
   }
 }
+function lampStatus(actualModeVal)
+{
+if(actualModeVal==null){
+  actualLampStatus.innerHTML="No lamp mode selected";
+  actualLampStatus.style.color="black";
+  document.getElementById('lampLed').style.backgroundColor="red";
+}
+else{
+actualLampStatus.innerHTML="Lamp mode: "+document.getElementById("mode"+actualModeVal).querySelector('input[type=submit]').value;
+actualLampStatus.style.color="green";
+document.getElementById('lampLed').style.backgroundColor="rgb(102, 255, 51)";
+}
+}
+
+function{lampLight}
+
 disableAllModes(modes,modesKids);
 function modeSelect(e) {
 if(e.target.classList.contains('btn')==true){
@@ -42,19 +56,15 @@ if(e.target.classList.contains('btn')==true){
     modesKids[i].disabled = false;
     }
 }
+lampStatus(actualModeVal);
 }
+lampStatus(actualModeVal);
+  
 function lightLevelSlider(e) {
   if((e.target.classList.contains('sliderLightLevel')==true)&&(e.target.parentElement.parentElement.value==actualModeVal)){
     conole.log("Actual mode+ slider value: "+actualModeVal+" "+e.target.value);
   }
   }
-// function tempLevelSlider(e) {
-// if(e.target.classList.contains('sliderLightTemp')==true){
-//   alert( e.target.value);
-// }
-// }
-  
-
 const pickr = Pickr.create({
   el: '.color-picker',
   theme: 'classic', // or 'monolith', or 'nano'
