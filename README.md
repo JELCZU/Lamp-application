@@ -15,7 +15,7 @@ To run project
 git clone https://github.com/JELCZU/Lamp-application.git
 
 or download repository by clicking "Open with GitHub Desktop" or "Download ZIP"
-![How to download](https://github.com/JELCZU/Lamp-applicatio/blob/master/img/How%20to%20download.PNG) 
+![How to download](https://github.com/JELCZU/Lamp-application/blob/master/img/How%20to%20download.PNG) 
 After download repository you can run project.
 ## About app
 Lamp application goal is to control lamp based on ESP32.
