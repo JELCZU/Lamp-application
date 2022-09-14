@@ -22,7 +22,7 @@ Lamp application goal is to control lamp based on ESP32.
 This app is developed using HTML+CSS+JavaScript.
 ![Mode 1](https://github.com/JELCZU/Lamp-application/blob/master/img/Lamp%20mode.PNG) 
 
-![Color mode](https://github.com/JELCZU/Catch-The-Fruit/blob/master/img/Lamp%20color%20mode.PNG) 
+![Color mode](https://github.com/JELCZU/Lamp-application/blob/master/img/Lamp%20color%20mode.PNG) 
 To control lamp click any lamp mode and then click bar to adjast mode
 At the color lamp mode you have also rectangle to adjust color.
 ## Technologies
